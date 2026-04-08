@@ -22,7 +22,7 @@ requirements:
     - wheel
   run:
     - python >=${{ python_min }}
-    - rfdetr >=1.4.3,<2
+    - rfdetr >=1.6.0,<2
 
 tests:
   - python:
