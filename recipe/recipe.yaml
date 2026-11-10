@@ -1,13 +1,13 @@
 context:
-  version: "1.1.0"
+  version: "1.2.0"
 
 package:
   name: rfdetr-plus
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/c0/96/ba4b874e76a5458cccbe0589020fa778e70a007462dae771c93ba8eed83f/rfdetr_plus-${{ version }}.tar.gz
-  sha256: 7471b983e69aa23e14d6721e501938444575a9b50c22e28ec528df497f8145a2
+  url: https://files.pythonhosted.org/packages/41/d3/5aa587ba7170e6eb718271da5e87b124a26a056d616d61fa531bd8f6f900/rfdetr_plus-${{ version }}.tar.gz
+  sha256: 53c7c442f3b6e94658460d1eb747cb82966e24514a97e5a5af015f5fe2bc607d
 
 build:
   noarch: python
@@ -22,7 +22,8 @@ requirements:
     - wheel
   run:
     - python >=${{ python_min }}
-    - rfdetr >=1.6.0,<2
+    - rfdetr >=1.12.0,<2
+    - timm >=1.0.27,<2
 
 tests:
   - python:
